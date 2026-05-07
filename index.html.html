@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Media Digital Interaktif dalam Pembelajaran Modern
+        
+    </title>
+
+    <!-- CSS -->
+    <style>
+
+/* ================= BODY ================= */
+
+body{
+
+    margin:0;
+
+    font-family:'Poppins',sans-serif;
+
+    background:#eef3f8;
+
+    color:#333;
+
+    scroll-behavior:smooth;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:50px;
+
+    padding:60px;
+
+    background:linear-gradient(
+        135deg,
+        #4facfe,
+        #00f2fe
+    );
+
+    color:white;
+
+    flex-wrap:wrap;
+}
+
+/* ================= GAMBAR HERO ================= */
+
+.hero-image img{
+
+    width:300px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+    transition:0.4s;
+}
+
+.hero-image img:hover{
+
+    transform:scale(1.05);
+}
+
+/* ================= TEXT HERO ================= */
+
+.hero-text{
+
+    max-width:500px;
+}
+
+.hero-text h1{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+    line-height:1.4;
+}
+
+.hero-text p{
+
+    font-size:18px;
+
+    line-height:1.8;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+    background:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+}
+
+.navbar a{
+
+    text-decoration:none;
+
+    margin:20px;
+
+    color:#333;
+
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.navbar a:hover{
+
+    color:#00a2ff;
+}
+
+/* ================= CONTENT ================= */
+
+.content{
+
+    padding:40px;
+}
+
+/* ================= CARD ================= */
+
+.card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+    margin-bottom:35px;
+}
+
+/* ================= HEADING ================= */
+
+h2{
+
+    color:#008cff;
+
+    margin-bottom:20px;
+}
+
+h3{
+
+    margin-top:30px;
+
+    color:#333;
+}
+
+/* ================= PARAGRAPH ================= */
+
+p{
+
+    line-height:1.9;
+
+    text-align:justify;
+}
+
+/* ================= LIST ================= */
+
+ul{
+
+    line-height:2;
+}
+
+/* ================= BLOCKQUOTE ================= */
+
+blockquote{
+
+    background:#eef7ff;
+
+    border-left:5px solid #00a2ff;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    font-style:italic;
+
+    margin-top:20px;
+}
+
+/* ================= SMALL ================= */
+
+small{
+
+    color:gray;
+}
+
+/* ================= TABLE ================= */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+}
+
+th, td{
+
+    border:1px solid #ddd;
+
+    padding:15px;
+
+    text-align:center;
+}
+
+th{
+
+    background:#00a2ff;
+
+    color:white;
+}
+
+/* ================= IMAGE ================= */
+
+img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    margin-top:20px;
+}
+
+/* ================= AUDIO ================= */
+
+audio{
+
+    width:100%;
+
+    margin-top:20px;
+}
+
+/* ================= VIDEO ================= */
+
+video{
+
+    width:100%;
+
+    border-radius:20px;
+
+    margin-top:20px;
+}
+
+/* ================= LINK ================= */
+
+a{
+
+    color:#008cff;
+}
+
+a:hover{
+
+    color:#005fa3;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    text-align:center;
+
+    background:#00a2ff;
+
+    color:white;
+
+    padding:20px;
+
+    border-radius:0;
+}
+
+/* ================= RESPONSIVE ================= */
+
+    @media screen and (max-width: 576px) {
+
+        .hero {
+            flex-direction: column;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        .hero-text h1 {
+            font-size: 24px;
+        }
+
+        .hero-text p {
+            font-size: 14px;
+        }
+
+        .navbar a {
+            display: block;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .content {
+            padding: 15px;
+        }
+
+        .card {
+            padding: 20px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        table {
+            display: block;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+    }
+
+    </style>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER WEBSITE ================= -->
+
+<header class="hero">
+
+    <div class="hero-image">
+
+        <img src="gambar 1.jpeg" alt="Media Digital">
+
+    </div>
+
+    <div class="hero-text">
+
+        <h1>
+            Media Digital Interaktif dalam Pembelajaran Modern
+        </h1>
+
+        <p>
+            Teknologi pendidikan membantu pembelajaran menjadi
+            <i>lebih fleksibel</i>,
+            <strong>lebih efektif</strong>,
+            dan <mark>lebih menarik</mark>.
+        </p>
+
+    </div>
+
+</header>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <a href="#beranda">Beranda</a>
+
+    <a href="#materi">Materi</a>
+
+    <a href="#data">Data</a>
+
+    <a href="#media">Media</a>
+
+</nav>
+
+<!-- ================= BERANDA ================= -->
+
+<section id="beranda" class="content">
+
+    <div class="card">
+
+        <h2>
+            🏠 Beranda Digital
+        </h2>
+
+ <!-- GAMBAR TAMBAHAN BERANDA -->
+<img src="gambar 2.jpeg" alt="Pembelajaran Digital Modern" style="display:block; margin:15px auto; width:60%; max-width:500px; height:auto; border-radius:15px;">      
+        <p>
+            Media digital interaktif menjadi bagian penting dalam perkembangan pendidikan modern karena membantu proses pembelajaran menjadi
+            <i>lebih fleksibel</i>,
+            <strong>lebih efektif</strong>,
+            dan <mark>lebih menarik</mark> bagi siswa maupun guru. Penggunaan teknologi dalam pembelajaran membuat siswa dapat mengakses materi kapan saja dan di mana saja. Perkembangan teknologi pendidikan memungkinkan pembelajaran dilakukan melalui media visual, audio, video, serta platform pembelajaran online. Penggunaan media digital dalam pendidikan terus meningkat hingga lebih dari 85<sup>%</sup> 
+    di sekolah modern karena teknologi membuat proses pembelajaran menjadi lebih efektif dan fleksibel.
+</p>
+
+        <blockquote>
+            “Teknologi pendidikan bukan hanya alat bantu, tetapi bagian penting dari inovasi pembelajaran masa depan.”
+            — UNESCO
+        </blockquote>
+
+        <small>
+            © 2026 Interactive Digital Learning
+        </small>
+
+        <h3>
+            Tujuan Website
+        </h3>
+
+        <ul>
+
+            <li>Memberikan informasi mengenai media digital pendidikan</li>
+
+            <li>Menjelaskan manfaat teknologi dalam pembelajaran</li>
+
+            <li>Menampilkan contoh media digital interaktif</li>
+
+            <li>Menyajikan data penggunaan teknologi pendidikan modern</li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- ================= PUSAT PEMBELAJARAN ================= -->
+
+<section id="materi" class="content">
+
+    <div class="card">
+
+        <h2>
+            📚 Pusat Pembelajaran
+        </h2>
+
+        <h3>
+            Pengertian Media Digital Interaktif
+        </h3>
+
+        <p>
+            Media digital interaktif adalah media pembelajaran berbasis teknologi yang digunakan untuk mendukung proses belajar secara
+            <i>sistematis</i>,
+            <strong>terencana</strong>,
+            dan <mark>inovatif</mark>. Media digital memungkinkan siswa berinteraksi langsung dengan materi pembelajaran melalui audio, video, animasi, maupun aplikasi pendidikan.
+        </p>
+
+        <h3>
+            Manfaat Media Digital dalam Pembelajaran
+        </h3>
+
+        <ul>
+
+            <li>Mempermudah akses materi pembelajaran</li>
+
+            <li>Meningkatkan motivasi belajar siswa</li>
+
+            <li>Membantu visualisasi materi yang sulit dipahami</li>
+
+            <li>Mendukung pembelajaran jarak jauh</li>
+
+            <li>Meningkatkan kreativitas dan kolaborasi siswa</li>
+
+        </ul>
+
+        <h3>
+            Contoh Interaksi Digital
+        </h3>
+
+        <ul>
+
+            <li>Diskusi online</li>
+
+            <li>Forum belajar virtual</li>
+
+            <li>Kuis berbasis internet</li>
+
+            <li>Presentasi digital interaktif</li>
+
+        </ul>
+
+<div style="display:flex; align-items:flex-start; gap:20px; flex-wrap:wrap;">
+
+    <!-- GAMBAR DI KIRI (BESAR) -->
+    <img src="gambar 3.jpeg" 
+         alt="Media Digital Pendidikan"
+         style="width:400px; max-width:100%; border-radius:15px;">
+
+<div style="display:flex; align-items:flex-start; gap:20px; flex-wrap:wrap;">
+
+    <!-- TEKS DI KANAN -->
+    <div style="flex:1; min-width:250px;">
+
+        <h3>Contoh Media Digital Pendidikan</h3>
+
+        <ul>
+            <li>Google Classroom</li>
+            <li>Zoom Meeting</li>
+            <li>Quizizz</li>
+            <li>Canva Education</li>
+            <li>YouTube Edu</li>
+            <li>E-book Digital</li>
+            <li>
+                Platform Pembelajaran Lain
+                <ul>
+                    <li>Moodle</li>
+                    <li>Edmodo</li>
+                    <li>Google Meet</li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+</div>
+
+</ul>
+
+        <p>
+            Metode pembelajaran lama yang kurang efektif sebaiknya
+            <del>dipertahankan</del>
+            dan mulai diganti menggunakan media digital interaktif yang lebih modern. Materi pembelajaran terbaru dapat
+            <ins>ditambahkan</ins>
+            sesuai perkembangan teknologi pendidikan saat ini. Platform pembelajaran modern seperti E-Learning<sub>2</sub> 
+    membantu siswa mengakses materi secara interaktif melalui media digital.
+</p>
+
+        <h3>
+            Dampak Media Digital
+        </h3>
+
+        <p>
+            Penggunaan media digital memberikan dampak positif terhadap proses pembelajaran karena dapat meningkatkan minat belajar siswa, mempercepat akses informasi, serta membantu siswa memahami materi secara visual maupun audio. Namun, penggunaan teknologi juga harus diawasi agar siswa tetap menggunakan media digital secara bijak dan bertanggung jawab.
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ================= DATA & ANALISIS ================= -->
+
+<section id="data" class="content">
+
+    <div class="card">
+
+        <h2>
+            📊 DATA & ANALISIS
+        </h2>
+
+        <h3>
+            Tabel Media Digital Pembelajaran
+        </h3>
+
+        <table>
+
+            <tr>
+
+                <th>Media Digital</th>
+
+                <th>Fungsi</th>
+
+                <th>Manfaat</th>
+
+            </tr>
+
+            <tr>
+
+                <td>Google Classroom</td>
+
+                <td>Kelas online</td>
+
+                <td>Mempermudah tugas</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Zoom Meeting</td>
+
+                <td>Pembelajaran jarak jauh</td>
+
+                <td>Interaksi virtual</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Quizizz</td>
+
+                <td>Evaluasi pembelajaran</td>
+
+                <td>Kuis interaktif</td>
+
+            </tr>
+
+            <tr>
+
+                <td>YouTube Edu</td>
+
+                <td>Video pembelajaran</td>
+
+                <td>Visualisasi materi</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Canva Education</td>
+
+                <td>Presentasi digital</td>
+
+                <td>Kreativitas siswa</td>
+
+            </tr>
+
+        </table>
+
+        <h3>
+            Data Penggunaan Teknologi di Sekolah
+        </h3>
+
+        <table class="modern-table">
+
+            <tr>
+
+                <th rowspan="2">No</th>
+
+                <th rowspan="2">Kategori</th>
+
+                <th colspan="2">Media Pembelajaran</th>
+
+                <th rowspan="2">Persentase Penggunaan</th>
+
+            </tr>
+
+            <tr>
+
+                <th>Platform</th>
+
+                <th>Fungsi</th>
+
+            </tr>
+
+            <tr>
+
+                <td rowspan="2">1</td>
+
+                <td rowspan="2">Pembelajaran Online</td>
+
+                <td>Google Classroom</td>
+
+                <td>Pengumpulan tugas dan materi</td>
+
+                <td rowspan="2">75%</td>
+
+            </tr>
+
+            <tr>
+
+                <td>Zoom Meeting</td>
+
+                <td>Pembelajaran virtual interaktif</td>
+
+            </tr>
+
+            <tr>
+
+                <td rowspan="2">2</td>
+
+                <td rowspan="2">Media Interaktif</td>
+
+                <td>Quizizz</td>
+
+                <td>Kuis dan evaluasi pembelajaran</td>
+
+                <td rowspan="2">65%</td>
+
+            </tr>
+
+            <tr>
+
+                <td>YouTube Edu</td>
+
+                <td>Video pembelajaran visual</td>
+
+            </tr>
+
+            <tr>
+
+                <td rowspan="2">3</td>
+
+                <td rowspan="2">Pembelajaran Offline</td>
+
+                <td colspan="2">
+                    Buku digital dan modul pembelajaran digunakan untuk mendukung pembelajaran mandiri siswa
+                </td>
+
+                <td rowspan="2">55%</td>
+
+            </tr>
+
+            <tr>
+
+                <td colspan="2">
+                    Presentasi PowerPoint digunakan guru untuk membantu visualisasi materi di kelas
+                </td>
+
+            </tr>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- ================= GALERI EDUKASI ================= -->
+
+<section id="media" class="content">
+
+    <div class="card">
+
+        <h2>
+            🎬 Galeri Edukasi
+        </h2>
+
+<!-- GAMBAR DITENGAH -->
+<div style="text-align:center; margin:15px 0;">
+
+    <img src="gambar 4.jpeg" 
+         alt="Galeri Edukasi Digital"
+         style="width:350px; max-width:100%; border-radius:15px; display:block; margin:0 auto;">
+
+</div>
+
+        <p>
+            konsep e-learning dalam pembelajaran digital untuk membantu pemahaman siswa melalui penjelasan verbal.
+        </p>
+
+        <audio controls>
+
+            <source src="audio.mp4" type="audio/mp3">
+
+        </audio>
+
+        <p>
+           Video yang ditampilkan merupakan micro learning berbasis animasi e-learning yang menjelaskan pembelajaran digital secara singkat dan interaktif.
+        </p>
+
+        <video controls width="100%">
+
+            <source src="video.mp4" type="video/mp4">
+
+        </video>
+
+        <h3>
+            Referensi Pendidikan
+        </h3>
+
+        <ul>
+
+            <li>
+                <a href="https://www.kemdikbud.go.id" target="_blank">
+                    Website Pendidikan Indonesia
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.unesco.org" target="_blank">
+                    UNESCO Education
+                </a>
+            </li>
+
+            <li>
+                <a href="https://edu.google.com" target="_blank">
+                    Google for Education
+                </a>
+            </li>
+
+            <li>
+                <a href="https://guru.kemdikbud.go.id" target="_blank">
+                    Platform Merdeka Mengajar
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+<!-- ================= PENUTUP WEBSITE ================= -->
+
+<section class="closing card">
+    <h2>
+        Terima Kasih Telah Mengunjungi Website Ini
+    </h2>
+
+    <p>
+        Media digital interaktif menjadi bagian penting dalam perkembangan pendidikan modern. 
+        Dengan adanya teknologi, proses pembelajaran menjadi lebih efektif, menarik, dan fleksibel 
+        bagi guru maupun siswa.
+    </p>
+
+    <p>
+        Semoga informasi pada website ini dapat menambah wawasan mengenai penggunaan teknologi 
+        dalam dunia pendidikan serta mendorong pemanfaatan media digital secara bijak dan kreatif.
+    </p>
+
+    <h3>
+        Tetap Semangat Belajar dan Berkarya ✨
+    </h3>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 Interactive Digital Learning | Designed by Syafira
+    </p>
+
+</footer>
+
+</body>
+</html>
